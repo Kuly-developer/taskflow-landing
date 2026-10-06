@@ -1,0 +1,33 @@
+<section id="waitlist" class="waitlist-section">
+  <div class="waitlist-card">
+    <h2>Join the Future of <span class="gradient-text">Productivity</span></h2>
+    <p>We are currently in limited private beta. Sign up below to get early access and claim your free credits.</p>
+
+    <!-- በተሳካ ሁኔታ ከተመዘገበ የሚታይ መልዕክት -->
+    <div *ngIf="isSubmitted" class="success-message">
+      🎉 Awesome! You have been added to the waitlist. Check your inbox soon!
+    </div>
+
+    <form *ngIf="!isSubmitted" [formGroup]="waitlistForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Enter your professional email address"
+          class="form-input"
+        />
+        <button type="submit" [disabled]="waitlistForm.invalid" class="btn-submit">
+          Join Waitlist
+        </button>
+      </div>
+
+      <!-- ስህተት ከጻፈ የሚታይ ቀይ ማሳሰቢያ -->
+      <small *ngIf="waitlistForm.get('email')?.touched && waitlistForm.get('email')?.invalid" class="error-text">
+        Please enter a valid email address.
+      </small>
+    </form>
+  </div>
+  <div *ngIf="errorMessage" class="error-text"style="text-align: center; margin-bottom: 15px; color:#f87171; font-weight:600;">
+     ❌ {{errorMessage}}
+  </div>
+</section>

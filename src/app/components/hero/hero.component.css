@@ -1,0 +1,159 @@
+.hero-section{
+  background-color: #0b0f19;
+  color: #ffffff;
+  padding: 80px 8% 120px 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.badge{
+  background: rgba(59, 130, 246,0.1);
+  border: 1px solid rgba(59, 130, 246,0.3);
+  color: #60a5fa;
+  padding: 6px 16px;
+  border-radius: 20px;
+ font-size: 14px;
+ font-weight: 600;
+ margin-bottom: 24px;
+ display: inline-block;
+}
+.hero-content h1{
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: 800px;
+  margin-bottom: 24px;
+  letter-spacing:-1px;
+}
+.gradient-text{
+  background: linear-gradient(135deg,#3b82f6,#a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.hero-content p {
+  font-size: 18px;
+  color:#94a3b8;
+  max-width :600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+
+  .gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+
+}
+.hero-actions{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+   justify-content: center;
+
+}
+
+.btn-hero-primary{
+  background: #3b82f6;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-hero-secondary{
+  background: #2563eb;
+  box-shadow: 0 4px 20px rgba(59,130,246,0.4);
+
+}
+.btn-hero-secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid #334155;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-hero-secondary:hover {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+/* የDashboard ማሳያ ሳጥን ዲዛይን (Mockup) */
+.hero-dashboard-preview {
+  width: 100%;
+  max-width: 900px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.dashboard-header {
+  background: #0f172a;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: #ef4444;
+}
+.dot:nth-child(2) { background: #f59e0b; }
+.dot:nth-child(3) { background: #10b981; }
+
+.search-bar {
+  background: #1e293b;
+  color: #64748b;
+  font-size: 12px;
+  padding: 4px 20px;
+  border-radius: 6px;
+  margin-left: 40px;
+  width: 250px;
+  text-align: left;
+}
+
+.dashboard-body {
+  display: flex;
+  height: 300px;
+}
+
+.mock-sidebar {
+  width: 20%;
+  background: #0f172a;
+  border-right: 1px solid #334155;
+}
+
+.mock-content {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mock-card {
+  background: #0f172a;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+.row-1 { height: 100px; }
+.row-2 { height: 140px; }
+}
