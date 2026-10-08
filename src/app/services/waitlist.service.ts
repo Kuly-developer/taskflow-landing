@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
 })
 export class WaitlistService {
 
-  private apiUrl = 'http://onrender.com';
+// ❌ የድሮውን አጥፋና ይህንን ፍጹም የኢንተርኔት ሊንክ ተካው (ያለ :8080 ፖርት ቁጥር!)
+private apiUrl = 'https://onrender.com';
 
   constructor(private http: HttpClient) { }
 
