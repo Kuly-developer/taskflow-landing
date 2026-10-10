@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 export class WaitlistService {
 
 // ❌ የድሮውን አጥፋና ይህንን ፍጹም የኢንተርኔት ሊንክ ተካው (ያለ :8080 ፖርት ቁጥር!)
-private apiUrl = 'https://onrender.com';
+private apiUrl = 'https://taskflow-backend-fvio.onrender.com/';
 
   constructor(private http: HttpClient) { }
 
