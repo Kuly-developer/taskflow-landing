@@ -8,8 +8,7 @@ import { Observable } from 'rxjs';
 export class WaitlistService {
 
   // 🔗 ያገኘኸው ትክክለኛው የRender ባኬንድ ሊንክ ከነ መድረሻ መስመሩ (/api/waitlist) ተኳቷል!
-  private apiUrl = 'https://onrender.com';
-
+  private apiUrl = 'https://taskflow-backend-fvio.onrender.com'
   constructor(private http: HttpClient) { }
 
   sendEmail(email: string): Observable<any> {
